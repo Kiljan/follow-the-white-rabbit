@@ -27,12 +27,14 @@ void terminal_writechar(char c, char colour)
 
     terminal_putchar(terminal_col, terminal_row, c, colour);
     terminal_col += 1;
+
     if (terminal_col >= VGA_WIDTH)
     {
         terminal_col = 0;
         terminal_row += 1;
     }
 }
+
 void terminal_initialize()
 {
     video_mem = (uint16_t*)(0xB8000);
