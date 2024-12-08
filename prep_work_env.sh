@@ -1,11 +1,14 @@
 #!/bin/bash
 
-BINUTILS="binutils-2.43"
-GCC="gcc-14.2.0"
+BINUTILS="binutils-2.35"
+GCC="gcc-10.2.0"
 
 # Base install
 sudo zypper update --no-confirm
 sudo zypper install --no-confirm nasm qemu bless gdb wget xz
+
+mkdir $HOME/follow-the-white-rabbit/bin
+mkdir $HOME/follow-the-white-rabbit/build
 
 # Cross Compiler
 # References from https://wiki.osdev.org/GCC_Cross-Compiler
