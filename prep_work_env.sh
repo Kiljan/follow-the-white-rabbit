@@ -9,6 +9,8 @@ sudo zypper install --no-confirm nasm qemu bless gdb wget xz
 
 mkdir $HOME/follow-the-white-rabbit/bin
 mkdir $HOME/follow-the-white-rabbit/build
+mkdir $HOME/follow-the-white-rabbit/build/idt
+mkdir $HOME/follow-the-white-rabbit/build/memory
 
 # Cross Compiler
 # References from https://wiki.osdev.org/GCC_Cross-Compiler
